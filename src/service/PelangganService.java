@@ -4,8 +4,8 @@ package service;
 import model.Pelanggan;
 import repository.PelangganRepository;
 import repository.PelangganRepositoryImpl;
-
 import java.util.List;
+
 
 public class PelangganService {
 
@@ -14,6 +14,7 @@ public class PelangganService {
     public PelangganService() {
         this.pelangganRepository = new PelangganRepositoryImpl();
     }
+
 
     public void daftarPelanggan(String nama, String email, String telepon, String alamat) {
         if (nama == null || nama.isEmpty()) {

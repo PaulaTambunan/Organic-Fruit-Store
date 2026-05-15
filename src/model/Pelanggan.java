@@ -10,13 +10,13 @@ public class Pelanggan extends Entity {
 
     // Constructor
     public Pelanggan() {}
-
     public Pelanggan(String nama, String email, String telepon, String alamat) {
         this.nama = nama;
         this.email = email;
         this.telepon = telepon;
         this.alamat = alamat;
     }
+
 
     // Getter & Setter
     public String getNama() { return nama; }
@@ -31,6 +31,7 @@ public class Pelanggan extends Entity {
     public String getAlamat() { return alamat; }
     public void setAlamat(String alamat) { this.alamat = alamat; }
 
+    
     @Override
     public String toString() {
         return String.format("[%d] %s | %s | %s", id, nama, email, telepon);

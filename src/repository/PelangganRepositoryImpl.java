@@ -8,6 +8,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class PelangganRepositoryImpl implements PelangganRepository {
 
     private Pelanggan mapToPelanggan(ResultSet rs) throws SQLException {
@@ -20,7 +21,7 @@ public class PelangganRepositoryImpl implements PelangganRepository {
         return p;
     }
 
-
+    
     @Override
     public void tambah(Pelanggan pelanggan) {
         String sql = "INSERT INTO pelanggan (nama, email, telepon, alamat) VALUES (?, ?, ?, ?)";
